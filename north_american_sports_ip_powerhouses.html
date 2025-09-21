@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North American Sports IP Powerhouses: A Merchandise Deep Dive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F3F4F6;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 400px;
+        }
+        @media (min-width: 640px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-black text-[#3357FF] tracking-tight">North American Sports IP Powerhouses</h1>
+            <p class="text-lg md:text-xl text-gray-600 mt-2 max-w-3xl mx-auto">A deep dive into licensed merchandise sales, fan engagement, and the untapped potential of physical derivatives like toys.</p>
+        </header>
+
+        <main class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+            <section class="lg:col-span-2 bg-white rounded-2xl shadow-lg p-6 md:p-8">
+                <h2 class="text-2xl md:text-3xl font-bold mb-1 text-[#FF5733]">The Titans of Retail</h2>
+                <p class="text-gray-600 mb-6">The North American licensed sports merchandise market is a multi-billion dollar industry. While apparel dominates, other categories show significant strength. The NFL remains the undisputed champion in overall sales, commanding a massive lead over its competitors.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                    <div class="md:col-span-2">
+                        <h3 class="text-xl font-semibold text-center mb-2">Annual Merchandise Revenue (USD)</h3>
+                        <div class="chart-container h-80 sm:h-96">
+                            <canvas id="merchRevenueChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="md:col-span-1">
+                        <h3 class="text-xl font-semibold text-center mb-2">Merchandise Market Breakdown</h3>
+                        <div class="chart-container h-64 sm:h-80">
+                           <canvas id="merchBreakdownChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+                <h2 class="text-2xl md:text-3xl font-bold mb-1 text-[#33FF57]">The Fan Factor</h2>
+                 <p class="text-gray-600 mb-6">A massive, engaged fanbase is the engine behind merchandise sales. This chart maps major leagues by their broadcast viewership against their social media reach, revealing different dimensions of influence. The NFL excels in broadcast dominance, while the NBA shows exceptional digital engagement.</p>
+                <h3 class="text-xl font-semibold text-center mb-2">Audience vs. Influence</h3>
+                <div class="chart-container">
+                    <canvas id="fanEngagementChart"></canvas>
+                </div>
+            </section>
+
+            <section class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+                <h2 class="text-2xl md:text-3xl font-bold mb-1 text-[#FF33A1]">Customer Profile</h2>
+                <p class="text-gray-600 mb-6">Each league caters to a unique demographic profile. The NBA's audience skews younger and more diverse, making them prime consumers for new and trendy products. In contrast, MLB's fanbase is more traditional and older, while the NFL captures a broad, mainstream audience.</p>
+                <h3 class="text-xl font-semibold text-center mb-2">Fan Demographic Profile Comparison</h3>
+                 <div class="chart-container">
+                    <canvas id="demographicsChart"></canvas>
+                </div>
+            </section>
+            
+            <section class="lg:col-span-2 bg-white rounded-2xl shadow-lg p-6 md:p-8">
+                <h2 class="text-2xl md:text-3xl font-bold mb-1 text-[#F1C40F]">Toy-Specific Merchandise Sale </h2>
+                <p class="text-gray-600 mb-6">While a smaller segment, toys represent a high-margin category with significant growth potential, especially for IPs that resonate with younger audiences and have a strong "hero" culture around star players. The NBA and NFL lead in this area due to their rosters of iconic, marketable athletes.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-xl font-semibold text-center mb-2">Estimated Annual Toy Sales (USD)</h3>
+                        <div class="chart-container h-80">
+                            <canvas id="toySalesChart"></canvas>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-center mb-2">Commercial Potential For Toys</h3>
+                        <div class="space-y-4 pt-4">
+                            <div class="p-4 bg-gray-50 rounded-lg border-l-4 border-[#3357FF]">
+                                <h4 class="font-bold text-lg">1. National Football League (NFL)</h4>
+                                <p class="text-sm text-gray-600">Highest Potential. Massive reach, iconic teams, and star quarterbacks create a strong foundation for collectibles and action figures.</p>
+                            </div>
+                             <div class="p-4 bg-gray-50 rounded-lg border-l-4 border-[#FF5733]">
+                                <h4 class="font-bold text-lg">2. National Basketball Association (NBA)</h4>
+                                <p class="text-sm text-gray-600">High Potential. Player-centric league with global superstars and a young, digitally-native fanbase that drives trends.</p>
+                            </div>
+                             <div class="p-4 bg-gray-50 rounded-lg border-l-4 border-[#33FF57]">
+                                <h4 class="font-bold text-lg">3. Major League Baseball (MLB)</h4>
+                                <p class="text-sm text-gray-600">Moderate Potential. Strong in collectibles (bobbleheads, figurines) but has an older demographic, limiting broader toy appeal.</p>
+                            </div>
+                             <div class="p-4 bg-gray-50 rounded-lg border-l-4 border-[#FF33A1]">
+                                <h4 class="font-bold text-lg">4. National Hockey League (NHL)</h4>
+                                <p class="text-sm text-gray-600">Niche Potential. Passionate fanbase but more regional. Collectibles and tabletop games perform better than action-oriented toys.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="lg:col-span-2 bg-[#3357FF] text-white rounded-2xl shadow-lg p-6 md:p-8 text-center">
+                 <h2 class="text-2xl md:text-3xl font-bold mb-2">Conclusion: The Highest Potential Play</h2>
+                 <p class="text-lg max-w-4xl mx-auto leading-relaxed">
+                    Based on the analysis, the <span class="font-bold text-[#F1C40F]">NFL and NBA</span> demonstrate the highest commercial potential for physical derivatives like robot toys. The <span class="font-bold">NFL</span> offers unparalleled market size and brand recognition. The <span class="font-bold">NBA</span> boasts a younger, trend-setting global audience and a culture that elevates individual athletes to "superhero" status, a perfect narrative for toy development. Capitalizing on star players from these two leagues offers the most promising path to success in the sports toy market.
+                 </p>
+            </section>
+
+        </main>
+    </div>
+
+<script>
+    const wrapLabel = (label) => {
+        const maxLength = 16;
+        if (typeof label !== 'string' || label.length <= maxLength) {
+            return label;
+        }
+        const words = label.split(' ');
+        const lines = [];
+        let currentLine = '';
+        for (const word of words) {
+            if ((currentLine + ' ' + word).length > maxLength && currentLine.length > 0) {
+                lines.push(currentLine);
+                currentLine = word;
+            } else {
+                currentLine = currentLine ? currentLine + ' ' + word : word;
+            }
+        }
+        lines.push(currentLine);
+        return lines;
+    };
+    
+    const tooltipTitleCallback = (tooltipItems) => {
+        const item = tooltipItems[0];
+        let label = item.chart.data.labels[item.dataIndex];
+        return Array.isArray(label) ? label.join(' ') : label;
+    };
+
+    const commonChartOptions = {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                labels: {
+                    color: '#4B5563',
+                    font: {
+                        family: "'Inter', sans-serif",
+                    }
+                }
+            },
+            tooltip: {
+                callbacks: {
+                    title: tooltipTitleCallback
+                },
+                titleFont: {
+                    family: "'Inter', sans-serif",
+                },
+                bodyFont: {
+                   family: "'Inter', sans-serif",
+                }
+            }
+        },
+        scales: {
+            x: {
+                ticks: {
+                    color: '#4B5563',
+                     font: {
+                        family: "'Inter', sans-serif",
+                    }
+                },
+                grid: {
+                    display: false
+                }
+            },
+            y: {
+                ticks: {
+                    color: '#4B5563',
+                     font: {
+                        family: "'Inter', sans-serif",
+                    }
+                },
+                 grid: {
+                    color: '#E5E7EB'
+                }
+            }
+        }
+    };
+    
+    const palette = {
+        blue: '#3357FF',
+        orange: '#FF5733',
+        green: '#33FF57',
+        pink: '#FF33A1',
+        yellow: '#F1C40F'
+    };
+
+    const merchRevenueData = {
+        labels: ['National Football League', 'Major League Baseball', 'National Basketball Association', 'National Hockey League'].map(wrapLabel),
+        datasets: [{
+            label: 'Annual Merchandise Revenue (in Billions)',
+            data: [16.0, 7.8, 6.5, 1.8],
+            backgroundColor: [palette.blue, palette.orange, palette.green, palette.pink],
+            borderColor: [palette.blue, palette.orange, palette.green, palette.pink],
+            borderWidth: 1
+        }]
+    };
+    new Chart(document.getElementById('merchRevenueChart'), {
+        type: 'bar',
+        data: merchRevenueData,
+        options: { ...commonChartOptions, indexAxis: 'y' }
+    });
+
+    const merchBreakdownData = {
+        labels: ['Apparel', 'Toys & Games', 'Collectibles', 'Accessories', 'Other'],
+        datasets: [{
+            label: 'Market Share',
+            data: [65, 12, 10, 8, 5],
+            backgroundColor: [palette.blue, palette.yellow, palette.orange, palette.green, palette.pink],
+            hoverOffset: 4
+        }]
+    };
+    new Chart(document.getElementById('merchBreakdownChart'), {
+        type: 'doughnut',
+        data: merchBreakdownData,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+             plugins: {
+                legend: {
+                    position: 'bottom',
+                     labels: {
+                        color: '#4B5563',
+                        font: { family: "'Inter', sans-serif" }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    }
+                }
+            }
+        }
+    });
+
+    const fanEngagementData = {
+        datasets: [{
+            label: 'NFL',
+            data: [{ x: 184, y: 100, r: 16 }],
+            backgroundColor: palette.blue
+        }, {
+            label: 'NBA',
+            data: [{ x: 19, y: 220, r: 6.5 }],
+            backgroundColor: palette.orange
+        }, {
+            label: 'MLB',
+            data: [{ x: 13, y: 45, r: 7.8 }],
+            backgroundColor: palette.green
+        }, {
+            label: 'NHL',
+            data: [{ x: 5, y: 25, r: 1.8 }],
+            backgroundColor: palette.pink
+        }]
+    };
+    new Chart(document.getElementById('fanEngagementChart'), {
+        type: 'bubble',
+        data: fanEngagementData,
+        options: {
+             ...commonChartOptions,
+             scales: {
+                x: {
+                    ...commonChartOptions.scales.x,
+                    title: { display: true, text: 'Avg. Major Event Viewership (Millions)', color: '#4B5563'}
+                },
+                y: {
+                     ...commonChartOptions.scales.y,
+                    title: { display: true, text: 'Social Media Followers (Millions)', color: '#4B5563'}
+                }
+            }
+        }
+    });
+
+    const demographicsData = {
+        labels: ['Youth Appeal (18-34)', 'Male Audience', 'High Income ($100k+)', 'Female Audience', 'Broad Age Appeal (35+)'],
+        datasets: [{
+            label: 'NFL',
+            data: [6, 8, 7, 7, 9],
+            backgroundColor: 'rgba(51, 87, 255, 0.2)',
+            borderColor: palette.blue,
+            pointBackgroundColor: palette.blue,
+        }, {
+            label: 'NBA',
+            data: [9, 7, 6, 6, 5],
+             backgroundColor: 'rgba(255, 87, 51, 0.2)',
+            borderColor: palette.orange,
+            pointBackgroundColor: palette.orange,
+        }, {
+            label: 'MLB',
+            data: [4, 8, 8, 5, 8],
+            backgroundColor: 'rgba(51, 255, 87, 0.2)',
+            borderColor: palette.green,
+            pointBackgroundColor: palette.green,
+        }]
+    };
+    new Chart(document.getElementById('demographicsChart'), {
+        type: 'radar',
+        data: demographicsData,
+        options: {
+            ...commonChartOptions,
+            scales: {
+                r: {
+                    angleLines: { color: '#E5E7EB' },
+                    grid: { color: '#E5E7EB' },
+                    pointLabels: { font: { size: 10, family: "'Inter', sans-serif" }, color: '#4B5563' },
+                    ticks: { display: false }
+                }
+            }
+        }
+    });
+
+    const toySalesData = {
+        labels: ['NFL', 'NBA', 'MLB', 'NHL'],
+        datasets: [{
+            label: 'Estimated Toy Sales (in Millions)',
+            data: [350, 310, 120, 45],
+            backgroundColor: [palette.blue, palette.orange, palette.green, palette.pink],
+            borderWidth: 1
+        }]
+    };
+     new Chart(document.getElementById('toySalesChart'), {
+        type: 'bar',
+        data: toySalesData,
+        options: commonChartOptions
+    });
+
+</script>
+
+</body>
+</html>
